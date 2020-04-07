@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../materialized/css/materialize.min.css">
+    <link rel="shortcut icon" href="../../full form validation/image/valid.jpeg" type="image/x-icon">
+    <title>Sign | Validation form</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="color: #7c797b; margin-left:120px;">Sign Up</h1><br>
+            <!--div for my form--> 
+            <div class="row">
+                <form class="col s6" id="myForm" novalidate>
+
+                    <div class="row">
+                        <!--Firstname Input Field-->
+                        <div class="input-field col s6">
+                            <label for="firstName">First Name</label>
+                                <input type="text" name="First Name" id="firstName" onfocusout="validateFirstName()">
+                                    <span class="helper-text"></span>
+                        </div>
+                        <!--Lastname Input Field-->
+                        <div class="input-field col s6">
+                            <label for="lastName">Last Name</label>
+                                <input type="text" name="Last Name" id="lastName" onfocusout="validateLastName()">
+                                    <span class="helper-text"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--Password Input field-->
+                        <div class="input-field col s6">
+                            <label for="password">Password</label>
+                                <input type="password" name="Password" id="password" onfocusout="validatePassword()">
+                                    <span class="helper-text"></span>
+                        </div>
+                        <!--Confirm Password-->
+                        <div class="input-field col s6">
+                            <label for="confirmPassword">Confirm Password</label>
+                                <input type="password" name="Confirm Password" id="confirmPassword" onfocusout="validateConfirmPassword()">
+                                    <span class="helper-text"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--Email Input Field-->
+                        <div class="input-field col s12">
+                            <label for="email">Email</label>
+                                <input type="email" name="Email" id="email">
+                                    <span class="helper-text"></span>
+                        </div>
+                    </div>
+
+                        <!-- Materialized Button-->
+    
+                    <button class="btn waves-effect waves-light" type="submit">Submit</button>
+                 
+                </form>
+
+                <div class="col s6">
+                    <img src="../image/thumbs-up.jpg" alt="students"
+                    style="width:100%;border-radius:5px;opacity: 0.9;"/>
+                </div>
+        
+        </div>
+    </div>
+    <script src="../materialized/js/materialize.min.js"></script>
+    <script src="../script/validation.js"></script>
+</body>
+</html>
